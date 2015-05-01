@@ -1,0 +1,122 @@
+@import "font-awesome/variables";
+@import "font-awesome/mixins";
+@import "font-awesome/path";
+@import "font-awesome/core";
+@import "font-awesome/larger";
+@import "font-awesome/fixed-width";
+@import "font-awesome/list";
+@import "font-awesome/bordered-pulled";
+@import "font-awesome/animated";
+@import "font-awesome/rotated-flipped";
+@import "font-awesome/stacked";
+@import "font-awesome/icons";
+
+
+body { 
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 62.5%;
+	text-align: center;
+}
+
+.nav-main {
+	margin: 0;
+	border-bottom: 1px solid black;
+	padding: 0;
+	overflow: auto;
+
+	li {
+		display: block;
+		float: left;
+
+		&:last-child {
+			border-right-style: none;
+		}
+
+
+		i {
+			padding: 8px;
+			border-radius: 15px;
+
+
+		&:hover, &:focus {
+			background-color: #2980b9;
+			padding: 8px;
+			border-radius: 15px;
+			transition: all 1s;
+			overflow: hidden;
+		}
+	}
+
+		a {
+			display: block;
+			padding: 13px;
+			text-decoration: none;
+			color: black;
+			transition: all 1s;
+			background-color: #eee;
+		}
+
+	}
+}
+
+table {
+	margin: 0 auto;
+	width: 550px;
+}
+
+td {
+	height: 175px;
+	width: 175px;
+	text-align: center;
+	font-size: 120px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+}
+
+.player-board {
+	margin: 0 auto;
+	padding: 20px 10px 10px 10px;
+	width: 511px;
+	text-align: left;
+	border: none;
+}
+
+.player-x, .player-o {
+	display: inline-block;
+	padding-right: 25px;
+	color: #ccc;
+	transition: all 200ms;
+}
+
+.current-player {
+	color: #2980b9;
+	transform: scale(1.2);
+}
+
+.btn {
+	float: right;
+	background-color: #2980b9;
+	border-radius: 8px;
+	border: none;
+	padding-right: 8px;
+	color: white;
+	font-size: 10px;
+	letter-spacing: 0.01em;
+}
+
+.marked-x {
+	color: blue;
+}
+
+.marked-x:before {
+	content: 'X';
+}
+
+.marked-o {
+	color: red;
+}
+
+.marked-o:before {
+	content: 'O';
+}
+
